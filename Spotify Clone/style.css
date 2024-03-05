@@ -1,0 +1,156 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/* Setting default styles for the body */
+body {
+    background-color: antiquewhite; /* Background color */
+}
+
+/* Resetting margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the navigation bar */
+nav {
+    font-family: 'Ubuntu', sans-serif; /* Setting font family */
+}
+
+nav ul {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center alignment for items */
+    list-style-type: none; /* Removing default list style */
+    height: 65px; /* Setting height */
+    background-color: black; /* Background color */
+    color: white; /* Text color */
+}
+
+nav ul li {
+    padding: 0 12px; /* Adding padding to list items */
+}
+
+/* Styling for the brand/logo */
+.brand img {
+    width: 44px; /* Setting width for logo */
+    padding: 0 8px; /* Adding padding */
+}
+
+.brand {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center alignment for items */
+    font-weight: bolder; /* Setting font weight */
+    font-size: 1.3rem; /* Setting font size */
+}
+
+/* Styling for the main container */
+.container {
+    min-height: 72vh; /* Setting minimum height */
+    background-color: black; /* Background color */
+    color: white; /* Text color */
+    font-family: 'Varela Round', sans-serif; /* Setting font family */
+    display: flex; /* Flexbox layout */
+    margin: 23px auto; /* Margin */
+    width: 70%; /* Setting width */
+    border-radius: 12px; /* Adding border radius */
+    padding: 34px; /* Padding */
+    background-image: url('bg.jpg'); /* Background image */
+    background-repeat: no-repeat; /* Preventing background image repetition */
+}
+
+/* Styling for the bottom section */
+.bottom {
+    position: sticky; /* Sticky positioning */
+    bottom: 0; /* Aligning to the bottom */
+    height: 180px; /* Setting height */
+    background-color: black; /* Background color */
+    color: white; /* Text color */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center alignment for items */
+    align-items: center; /* Center alignment for items */
+    flex-direction: column;  /* Setting flex direction */
+}
+
+/* Styling for the icons */
+.icons {
+    margin-top: 14px; /* Adding top margin */
+}
+
+.icons i {
+    cursor: pointer; /* Adding cursor pointer */
+}
+
+/* Styling for the progress bar */
+#myProgressBar {
+    width: 80vw; /* Setting width */
+    cursor: pointer; /* Adding cursor pointer */
+}
+
+/* Styling for the song item container */
+.songItemContainer {
+    margin-top: 74px; /* Adding top margin */
+}
+
+/* Styling for each song item */
+.songItem {
+    height: 50px; /* Setting height */
+    display: flex; /* Flexbox layout */
+    background-color: white; /* Background color */
+    color: black; /* Text color */
+    margin: 12px 0; /* Adding margin */
+    justify-content: space-between; /* Spacing between items */
+    align-items: center; /* Center alignment for items */
+    border-radius: 34px; /* Adding border radius */
+}
+
+.songItem img {
+    width: 43px; /* Setting width */
+    margin: 0 23px; /* Adding margin */
+    border-radius: 34px; /* Adding border radius */
+}
+
+/* Styling for the timestamp */
+.timestamp {
+    margin: 0 23px; /* Adding margin */
+}
+
+.timestamp i {
+    cursor: pointer; /* Adding cursor pointer */
+}
+
+/* Styling for the song info */
+.songInfo {
+    position: absolute; /* Absolute positioning */
+    left: 10vw; /* Aligning to the left */
+    font-family: 'Varela Round', sans-serif; /* Setting font family */
+}
+
+.songInfo img {
+    opacity: 0; /* Setting initial opacity */
+    transition: opacity 0.4s ease-in; /* Adding transition effect */
+}
+
+/* Media query for screens with maximum width of 768px */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 80%; /* Adjusting width for smaller screens */
+    }
+
+    .songItem img {
+        width: 30px; /* Adjusting image size for smaller screens */
+    }
+
+    .timestamp {
+        display: none; /* Hiding timestamp on smaller screens */
+    }
+    .songInfo {
+        position: relative; /* Change to relative positioning */
+        left: auto; /* Reset left alignment */
+        text-align: center; /* Center-align text */
+        margin-top: 20px; /* Add margin from the top */
+        margin-bottom: 20px; /* Add margin from the bottom */
+    }
+}
+
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="logo.png"> <!-- This line adds a favicon to the webpage -->
+  <title>Spotify - Your favourite music is here</title>
+  <link rel="stylesheet" href="style.css" /> <!-- Linking to external CSS file -->
+</head>
+<body>
+  <nav>
+    <ul>
+      <!-- Spotify logo and brand name -->
+      <li class="brand"><img src="logo.png" alt="Spotify" /> Spotify</li>
+      <!-- Navigation links -->
+      <li>Home</li>
+      <li>About</li>
+    </ul>
+  </nav>
+
+  <!-- Main container for the song list and banner -->
+  <div class="container">
+    <!-- Main container for the song list -->
+    <div class="songList">
+      <!-- Heading for the song list -->
+      <h1>Best of NCS - No Copyright Sounds</h1>
+      <!-- Container for individual song items -->
+      <div class="songItemContainer">
+        <!-- Individual song items -->
+        <!-- Each song item includes an image, name, timestamp, and play button -->
+        <!-- Repeat this structure for each song item -->
+        <div class="songItem">
+          <!-- Placeholder image for the song -->
+          <img alt="1" />
+          <!-- Name of the song -->
+          <span class="songName"></span>
+          <!-- Container for the timestamp and play button -->
+          <span class="songlistplay">
+            <!-- Timestamp of the song -->
+            <span class="timestamp">03:50
+              <!-- Play button with a unique ID -->
+              <!-- Use fontawesome icons for play buttons -->
+              <i id="0" class="far songItemPlay fa-play-circle"></i> 
+            </span>
+          </span>
+        </div>
+         <!-- Repeat this structure for each song item -->
+      <!-- Add alt attribute for images to provide alternative text -->
+      <!-- Set unique IDs for each play button -->
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName"></span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >02:33
+                <i id="1" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName"></span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >04:33
+                <i id="2" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName"></span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >04:27
+                <i id="3" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName"></span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >03:28
+                <i id="4" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName"></span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >07:04
+                <i id="5" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName"></span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >02:59
+                <i id="6" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName"></span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >04:00
+                <i id="7" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName"></span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >05:00
+                <i id="8" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName"></span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >05:28
+                <i id="9" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+        </div>
+      </div>
+      <!-- Placeholder for a song banner -->
+      <div class="songBanner"></div>
+    </div>
+
+  <!-- Bottom section for playback controls and song information -->
+  <div class="bottom">
+    <!-- Progress bar for song playback -->
+    <input
+      type="range"
+      name="range"
+      id="myProgressBar"
+      min="0"
+      value="0"
+      max="100"
+    />
+    <!-- Playback control icons -->
+    <div class="icons">
+      <!-- Previous track button -->
+      <i class="fas fa-3x fa-step-backward" id="previous"></i>
+      <!-- Play/pause button -->
+      <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+      <!-- Next track button -->
+      <i class="fas fa-3x fa-step-forward" id="next"></i>
+    </div>
+    <!-- Song information display -->
+    <div class="songInfo">
+      <!-- GIF animation for indicating playback -->
+      <img src="playing.gif" width="42px" alt="" id="gif" />
+      <!-- Display of the currently playing song -->
+      <span id="masterSongName">Warriyo - Mortals [NCS Release]</span>
+    </div>
+  </div>
+
+  <!-- Script tag to link to external JavaScript file -->
+  <script src="script.js"></script>
+  <!-- Font Awesome icons library -->
+  <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
