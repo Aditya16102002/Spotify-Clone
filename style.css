@@ -131,6 +131,17 @@ nav ul li {
     transition: opacity 0.4s ease-in; /* Adding transition effect */
 }
 
+/* Styling for elapsed time and total duration display */
+.timeDisplay {
+    color: white; /* Text color */
+    font-family: 'Varela Round', sans-serif; /* Font family */
+    margin: 10px 0; /* Margin */
+}
+
+.timeDisplay span {
+    font-size: 1.2rem; /* Font size */
+}
+
 /* Media query for screens with maximum width of 768px */
 @media only screen and (max-width: 768px) {
     .container {
@@ -152,5 +163,3 @@ nav ul li {
         margin-bottom: 20px; /* Add margin from the bottom */
     }
 }
-
-

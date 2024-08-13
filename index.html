@@ -45,95 +45,93 @@
             </span>
           </span>
         </div>
-         <!-- Repeat this structure for each song item -->
-      <!-- Add alt attribute for images to provide alternative text -->
-      <!-- Set unique IDs for each play button -->
-          <div class="songItem">
-            <img alt="1" />
-            <span class="songName"></span>
-            <span class="songlistplay"
-              ><span class="timestamp"
-                >02:33
-                <i id="1" class="far songItemPlay fa-play-circle"></i> </span
-            ></span>
-          </div>
-          <div class="songItem">
-            <img alt="1" />
-            <span class="songName"></span>
-            <span class="songlistplay"
-              ><span class="timestamp"
-                >04:33
-                <i id="2" class="far songItemPlay fa-play-circle"></i> </span
-            ></span>
-          </div>
-          <div class="songItem">
-            <img alt="1" />
-            <span class="songName"></span>
-            <span class="songlistplay"
-              ><span class="timestamp"
-                >04:27
-                <i id="3" class="far songItemPlay fa-play-circle"></i> </span
-            ></span>
-          </div>
-          <div class="songItem">
-            <img alt="1" />
-            <span class="songName"></span>
-            <span class="songlistplay"
-              ><span class="timestamp"
-                >03:28
-                <i id="4" class="far songItemPlay fa-play-circle"></i> </span
-            ></span>
-          </div>
-          <div class="songItem">
-            <img alt="1" />
-            <span class="songName"></span>
-            <span class="songlistplay"
-              ><span class="timestamp"
-                >07:04
-                <i id="5" class="far songItemPlay fa-play-circle"></i> </span
-            ></span>
-          </div>
-          <div class="songItem">
-            <img alt="1" />
-            <span class="songName"></span>
-            <span class="songlistplay"
-              ><span class="timestamp"
-                >02:59
-                <i id="6" class="far songItemPlay fa-play-circle"></i> </span
-            ></span>
-          </div>
-          <div class="songItem">
-            <img alt="1" />
-            <span class="songName"></span>
-            <span class="songlistplay"
-              ><span class="timestamp"
-                >04:00
-                <i id="7" class="far songItemPlay fa-play-circle"></i> </span
-            ></span>
-          </div>
-          <div class="songItem">
-            <img alt="1" />
-            <span class="songName"></span>
-            <span class="songlistplay"
-              ><span class="timestamp"
-                >05:00
-                <i id="8" class="far songItemPlay fa-play-circle"></i> </span
-            ></span>
-          </div>
-          <div class="songItem">
-            <img alt="1" />
-            <span class="songName"></span>
-            <span class="songlistplay"
-              ><span class="timestamp"
-                >05:28
-                <i id="9" class="far songItemPlay fa-play-circle"></i> </span
-            ></span>
-          </div>
+        <!-- Repeat this structure for each song item -->
+        <div class="songItem">
+          <img alt="1" />
+          <span class="songName"></span>
+          <span class="songlistplay">
+            <span class="timestamp">02:33
+              <i id="1" class="far songItemPlay fa-play-circle"></i> 
+            </span>
+          </span>
+        </div>
+        <div class="songItem">
+          <img alt="1" />
+          <span class="songName"></span>
+          <span class="songlistplay">
+            <span class="timestamp">04:33
+              <i id="2" class="far songItemPlay fa-play-circle"></i> 
+            </span>
+          </span>
+        </div>
+        <div class="songItem">
+          <img alt="1" />
+          <span class="songName"></span>
+          <span class="songlistplay">
+            <span class="timestamp">04:27
+              <i id="3" class="far songItemPlay fa-play-circle"></i> 
+            </span>
+          </span>
+        </div>
+        <div class="songItem">
+          <img alt="1" />
+          <span class="songName"></span>
+          <span class="songlistplay">
+            <span class="timestamp">03:28
+              <i id="4" class="far songItemPlay fa-play-circle"></i> 
+            </span>
+          </span>
+        </div>
+        <div class="songItem">
+          <img alt="1" />
+          <span class="songName"></span>
+          <span class="songlistplay">
+            <span class="timestamp">07:04
+              <i id="5" class="far songItemPlay fa-play-circle"></i> 
+            </span>
+          </span>
+        </div>
+        <div class="songItem">
+          <img alt="1" />
+          <span class="songName"></span>
+          <span class="songlistplay">
+            <span class="timestamp">02:59
+              <i id="6" class="far songItemPlay fa-play-circle"></i> 
+            </span>
+          </span>
+        </div>
+        <div class="songItem">
+          <img alt="1" />
+          <span class="songName"></span>
+          <span class="songlistplay">
+            <span class="timestamp">04:00
+              <i id="7" class="far songItemPlay fa-play-circle"></i> 
+            </span>
+          </span>
+        </div>
+        <div class="songItem">
+          <img alt="1" />
+          <span class="songName"></span>
+          <span class="songlistplay">
+            <span class="timestamp">05:00
+              <i id="8" class="far songItemPlay fa-play-circle"></i> 
+            </span>
+          </span>
+        </div>
+        <div class="songItem">
+          <img alt="1" />
+          <span class="songName"></span>
+          <span class="songlistplay">
+            <span class="timestamp">05:28
+              <i id="9" class="far songItemPlay fa-play-circle"></i> 
+            </span>
+          </span>
         </div>
       </div>
-      <!-- Placeholder for a song banner -->
-      <div class="songBanner"></div>
     </div>
+    <!-- Placeholder for a song banner -->
+    <div class="songBanner"></div>
+  </div>
 
   <!-- Bottom section for playback controls and song information -->
   <div class="bottom">
@@ -146,6 +144,10 @@
       value="0"
       max="100"
     />
+    <!-- Display for elapsed time and total duration -->
+    <div class="timeDisplay">
+      <span id="currentTime">00:00</span> / <span id="totalTime">00:00</span>
+    </div>
     <!-- Playback control icons -->
     <div class="icons">
       <!-- Previous track button -->
@@ -170,4 +172,3 @@
   <script src="https://kit.fontawesome.com/c68f66789f.js" crossorigin="anonymous"></script>
 </body>
 </html>
-
